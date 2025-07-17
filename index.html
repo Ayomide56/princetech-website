@@ -12,48 +12,73 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="logo">
-  <img src="logo.png" height="100">
-</div>
+      <img src="logo.png" alt="Princetech Logo" height="100">
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Admission</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="#" class="btn enroll-btn">Enroll Now</a>
+    <a href="#enroll" class="btn enroll-btn">Enroll Now</a>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-  <div class="hero-content">
-  <h1>Empowering You with Digital Skills </h1>
-  <p>
-    Learn the most in-demand digital tools in just 1 month!<br><br>
-    Whether you're a student, entrepreneur, or working professional — this training is designed to give you practical skills that matter.
-  </p>
-
-  <strong>What You’ll Learn:</strong>
-  <ul class="hero-list">
-    <li>✅ MS Word, Excel & PowerPoint</li>
-    <li>✅ Basic Graphic Design</li>
-    <li>✅ Emailing & Online Communication</li>
-    <li>✅ Intro to AI Tools</li>
-  </ul>
-
-  <a href="#" class="btn">View Courses</a>
-  <a href="#" class="btn btn-alt">Admission Open</a>
-</div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Empowering You with Digital Skills</h1>
+      <p>
+        Learn the most in-demand digital tools in just 1 month!<br><br>
+        Whether you're a student, entrepreneur, or working professional — this training is designed to give you practical skills that matter.
+      </p>
+      <strong>What You’ll Learn:</strong>
+      <ul class="hero-list">
+        <li>✅ MS Word, Excel & PowerPoint</li>
+        <li>✅ Basic Graphic Design</li>
+        <li>✅ Emailing & Online Communication</li>
+        <li>✅ Intro to AI Tools</li>
+      </ul>
+      <a href="#courses" class="btn">View Courses</a>
+      <a href="#enroll" class="btn btn-alt">Admission Open</a>
+    </div>
     <div class="hero-image">
       <img src="student.jpg" alt="Student with Tablet">
+    </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about-more" class="about-expanded">
+  <div class="founder-section">
+    <img src="founder.jpg" alt="Founder of Princetech Academy" class="founder-photo" />
+    <div class="founder-bio">
+      <h3>Meet the Founder</h3>
+      <p><strong>Prince Ayomide Barnabass </strong> is a passionate digital educator with over five years of  experience in ICT training, youth development, and digital empowerment across Nigeria. Through Princetech Academy, he has impacted hundreds of students by providing accessible, high-quality computer education. His vision is to raise a generation of tech-literate individuals equipped for 21st-century challenges.</p>
+    </div>
+  </div>
+
+  <div class="vision-mission">
+    <div class="card">
+      <h3>🎯 Our Vision</h3>
+      <p>To become Africa’s most impactful grassroots digital skills academy, bridging the technology gap through practical, accessible training.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 Our Mission</h3>
+      <ul>
+        <li>Empower learners with hands-on computer and digital skills</li>
+        <li>Provide affordable, quality education to students & entrepreneurs</li>
+        <li>Equip future leaders with relevant, real-world tools</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
   <!-- COURSES -->
-  <section class="courses">
+  <section id="courses" class="courses">
     <h2>Our Featured Courses</h2>
     <div class="course-grid">
       <div class="course-card">Basic Computer Course</div>
@@ -63,29 +88,21 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Princetech Academy</h2>
-    <p>We provide hands-on computer education designed for real-world success. Trusted by students and professionals alike.</p>
-    <a href="#" class="btn">Explore About Us</a>
+  <!-- ADMISSION -->
+  <section id="admission" class="promo">
+    <div class="promo-text">
+      <h3><del>₦10,000</del> → <strong>Now ₦5,000</strong> for First 10 Students</h3>
+      <p><strong>Start Date:</strong> August 11, 2025</p>
+      <p><strong>Days:</strong> Monday, Wednesday, Friday</p>
+    </div>
+    <div class="promo-qr">
+      <img src="qr-code.png" alt="QR Code"  height="500">
+      <p class="qr-label">Scan to Get Free Form</p>
+    </div>
   </section>
 
-  <!-- PROMO -->
-  <section class="promo">
-  <div class="promo-text">
-    <h3><del>₦10,000</del> → <strong>Now ₦5,000</strong> for First 10 Students</h3>
-    <p><strong>Start Date:</strong> August 11, 2025</p>
-    <p><strong>Days:</strong> Monday, Wednesday, Friday</p>
-  </div>
-
-  <div class="promo-qr">
-    <img src="qr-code.png" alt="QR Code">
-    <p class="qr-label">Scan to Get Free Form</p>
-  </div>
-</section>
-
   <!-- GALLERY -->
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <h2>Inside Princetech Academy</h2>
     <div class="gallery-grid">
       <div class="gallery-item">Photo 1</div>
@@ -97,18 +114,30 @@
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
+  <section id="faq" class="faq">
     <h2>Frequently Asked Questions</h2>
     <ul>
       <li><strong>What is the duration of the course?</strong> – 1 Month</li>
       <li><strong>Do I get a certificate?</strong> – Yes</li>
       <li><strong>How can I pay?</strong> – Bank or Online</li>
     </ul>
-    <a href="#" class="btn">See All FAQs</a>
+    <a href="#contact" class="btn">Ask a Question</a>
+  </section>
+
+  <!-- ENROLLMENT FORM -->
+  <section id="enroll" class="enroll-form">
+    <h2>Enroll Now</h2>
+    <form action="https://formsubmit.co/princetechacademy@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Why do you want to join?" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer id="contact" class="site-footer">
     <div class="footer-columns">
       <div><strong>P</strong><br/>Princetech Academy</div>
       <div>
@@ -126,6 +155,26 @@
     </div>
     <p class="copyright">© 2025 Princetech Academy. All rights reserved.</p>
   </footer>
+
+  <!-- JS: Highlight Active Nav on Scroll -->
+  <script>
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+      const fromTop = window.scrollY;
+
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+        if (
+          section.offsetTop <= fromTop + 100 &&
+          section.offsetTop + section.offsetHeight > fromTop + 100
+        ) {
+          navLinks.forEach(link => link.classList.remove("active"));
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
