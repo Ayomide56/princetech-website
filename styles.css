@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
@@ -17,9 +21,13 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 .btn {
   display: inline-block;
-  background: #d80032; /* Literate Red */
+  background: #d80032;
   color: white;
   padding: 10px 20px;
   margin-top: 10px;
@@ -27,7 +35,7 @@ a {
 }
 
 .btn-alt {
-  background: #ffc107; /* Gold */
+  background: #ffc107;
   color: #1e1e1e;
 }
 
@@ -38,14 +46,16 @@ a {
 }
 
 .site-header {
-  background: #0b1d3a; /* Navy */
+  background: #0b1d3a;
   color: white;
-  padding: 15px 30px;
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index:0;
+  height: 60px;
 }
 
 .site-header nav ul {
@@ -116,7 +126,8 @@ a {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
-.courses, .about, .promo, .gallery, .faq {
+
+.about, .courses, .gallery, .faq {
   padding: 50px 30px;
   text-align: center;
 }
@@ -136,10 +147,6 @@ a {
   width: 220px;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-}
-
-.about {
-  background: #f1f1f1;
 }
 
 .promo {
@@ -174,9 +181,12 @@ a {
 }
 
 .promo-qr img {
-  width: 350px;
+  width: 240px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  border: 4px solid #0b1d3a;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .qr-label {
@@ -202,4 +212,131 @@ footer p {
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
+}
+nav a.active {
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 4px;
+  color: #ffc107;
+}
+
+.enroll-form {
+  padding: 60px 30px;
+  background: #f5f5f5;
+  text-align: center;
+}
+.enroll-form h2 {
+  margin-bottom: 20px;
+}
+.enroll-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.enroll-form input,
+.enroll-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.enroll-form button {
+  background: #d80032;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.about-expanded {
+  padding: 60px 30px;
+  background: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-expanded h3 {
+  color: #0b1d3a;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-expanded ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-expanded li {
+  margin-bottom: 8px;
+}
+
+.about-expanded {
+  padding: 60px 30px;
+  background: #f9f9f9;
+}
+
+.founder-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.founder-photo {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.founder-bio {
+  flex: 1;
+  min-width: 250px;
+}
+
+.founder-bio h3 {
+  font-size: 26px;
+  color: #0b1d3a;
+  margin-bottom: 10px;
+}
+
+.founder-bio p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.vision-mission {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.vision-mission .card {
+  background: white;
+  border-left: 6px solid #ffc107;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 280px;
+}
+
+.vision-mission .card h3 {
+  color: #d80032;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.vision-mission .card p,
+.vision-mission .card ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.vision-mission ul {
+  padding-left: 20px;
 }
